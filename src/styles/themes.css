@@ -1,0 +1,141 @@
+/*
+ * Дизайн-токены сезонных тем. Все компоненты используют только эти переменные,
+ * поэтому смена атрибута data-theme на <html> перекрашивает весь сайт:
+ * публичные страницы, кабинет, портал, админ-панель, модальные окна, документы.
+ *
+ * Значения — RGB-тройки, чтобы Tailwind мог применять прозрачность (bg-primary/20).
+ * Новая тема = новый блок [data-theme="id"] + запись в src/themes/themes.json.
+ */
+
+/* ── Зима (тема по умолчанию и безопасный фолбэк) ── */
+:root,
+[data-theme="winter"] {
+  color-scheme: dark;
+  --c-bg: 10 19 34;
+  --c-surface: 18 31 52;
+  --c-surface-2: 25 41 67;
+  --c-border: 44 63 94;
+  --c-text: 232 240 250;
+  --c-muted: 147 166 194;
+  --c-primary: 104 174 236;
+  --c-primary-fg: 7 17 32;
+  --c-accent: 185 220 255;
+  --c-gold: 206 174 98;
+  --c-sidebar: 7 14 26;
+  --c-sidebar-text: 222 233 248;
+  --c-sidebar-muted: 128 148 178;
+  --c-success: 94 200 150;
+  --c-warning: 232 186 92;
+  --c-danger: 238 110 110;
+  --c-info: 120 180 240;
+  --c-glow: 150 205 255;
+  --c-shadow: 0 6 16;
+  --c-sky-top: 18 34 60;
+  --c-sky-bottom: 70 102 140;
+  --c-far: 52 74 104;
+  --c-city: 16 28 48;
+  --c-ground: 214 228 242;
+  --c-water: 120 150 182;
+  --c-foliage: 224 236 248;
+  --c-window: 255 214 140;
+  --surface-alpha: 0.86;
+}
+
+/* ── Осень ── */
+[data-theme="autumn"] {
+  color-scheme: dark;
+  --c-bg: 21 20 23;
+  --c-surface: 32 30 32;
+  --c-surface-2: 42 39 40;
+  --c-border: 66 60 57;
+  --c-text: 240 231 216;
+  --c-muted: 170 157 140;
+  --c-primary: 212 145 58;
+  --c-primary-fg: 24 20 16;
+  --c-accent: 191 96 52;
+  --c-gold: 214 172 92;
+  --c-sidebar: 16 15 17;
+  --c-sidebar-text: 236 226 210;
+  --c-sidebar-muted: 150 138 122;
+  --c-success: 132 190 120;
+  --c-warning: 228 170 72;
+  --c-danger: 226 100 84;
+  --c-info: 140 170 210;
+  --c-glow: 230 150 70;
+  --c-shadow: 6 4 2;
+  --c-sky-top: 44 34 38;
+  --c-sky-bottom: 168 102 58;
+  --c-far: 92 66 56;
+  --c-city: 26 22 24;
+  --c-ground: 70 48 34;
+  --c-water: 110 84 70;
+  --c-foliage: 196 108 40;
+  --c-window: 255 196 110;
+  --surface-alpha: 0.88;
+}
+
+/* ── Лето ── */
+[data-theme="summer"] {
+  color-scheme: light;
+  --c-bg: 241 246 251;
+  --c-surface: 255 255 255;
+  --c-surface-2: 234 241 248;
+  --c-border: 210 222 235;
+  --c-text: 16 32 52;
+  --c-muted: 84 103 126;
+  --c-primary: 21 101 192;
+  --c-primary-fg: 255 255 255;
+  --c-accent: 11 140 152;
+  --c-gold: 168 128 40;
+  --c-sidebar: 14 40 76;
+  --c-sidebar-text: 226 236 250;
+  --c-sidebar-muted: 150 174 206;
+  --c-success: 22 140 90;
+  --c-warning: 176 112 8;
+  --c-danger: 200 48 48;
+  --c-info: 21 101 192;
+  --c-glow: 60 150 255;
+  --c-shadow: 20 40 70;
+  --c-sky-top: 120 184 238;
+  --c-sky-bottom: 214 236 252;
+  --c-far: 150 190 210;
+  --c-city: 40 74 112;
+  --c-ground: 120 176 110;
+  --c-water: 70 150 200;
+  --c-foliage: 70 140 80;
+  --c-window: 230 240 250;
+  --surface-alpha: 0.9;
+}
+
+/* ── Весна ── */
+[data-theme="spring"] {
+  color-scheme: light;
+  --c-bg: 241 247 243;
+  --c-surface: 255 255 255;
+  --c-surface-2: 232 242 236;
+  --c-border: 206 222 212;
+  --c-text: 20 38 30;
+  --c-muted: 84 106 94;
+  --c-primary: 40 118 86;
+  --c-primary-fg: 255 255 255;
+  --c-accent: 52 132 168;
+  --c-gold: 158 126 52;
+  --c-sidebar: 21 50 42;
+  --c-sidebar-text: 226 242 233;
+  --c-sidebar-muted: 148 182 164;
+  --c-success: 34 140 92;
+  --c-warning: 170 112 20;
+  --c-danger: 196 56 56;
+  --c-info: 52 132 168;
+  --c-glow: 90 200 150;
+  --c-shadow: 20 50 36;
+  --c-sky-top: 150 200 220;
+  --c-sky-bottom: 228 242 234;
+  --c-far: 150 190 170;
+  --c-city: 42 72 70;
+  --c-ground: 132 186 120;
+  --c-water: 90 160 180;
+  --c-foliage: 112 176 96;
+  --c-window: 240 244 236;
+  --surface-alpha: 0.9;
+}

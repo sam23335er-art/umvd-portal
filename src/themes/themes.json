@@ -1,0 +1,42 @@
+{
+  "_comment": "Реестр тем оформления. Чтобы добавить тему: 1) добавь объект сюда; 2) добавь блок CSS-токенов [data-theme=\"id\"] в client/src/styles/themes.css; 3) (необязательно) добавь фон client/src/assets/backgrounds. Сервер принимает только id из этого файла.",
+  "defaultTheme": "winter",
+  "themes": [
+    {
+      "id": "autumn",
+      "name": "Осень",
+      "emoji": "🍂",
+      "description": "Тёмно-графитовая основа, янтарные и медные акценты, падающие листья.",
+      "mode": "dark",
+      "effect": "leaves",
+      "palette": ["#16161a", "#24221f", "#c8862f", "#b4532a", "#e9d8b4"]
+    },
+    {
+      "id": "winter",
+      "name": "Зима",
+      "emoji": "❄️",
+      "description": "Тёмно-синяя основа, ледяные оттенки, снежно-белые акценты и лёгкий снегопад.",
+      "mode": "dark",
+      "effect": "snow",
+      "palette": ["#0b1424", "#14223a", "#5fa8e8", "#b9dcff", "#c9a85a"]
+    },
+    {
+      "id": "summer",
+      "name": "Лето",
+      "emoji": "☀️",
+      "description": "Светлые поверхности, свежие сине-бирюзовые акценты, мягкие блики света.",
+      "mode": "light",
+      "effect": "sun",
+      "palette": ["#f3f7fb", "#ffffff", "#1565c0", "#0e9aa7", "#c9a14a"]
+    },
+    {
+      "id": "spring",
+      "name": "Весна",
+      "emoji": "🌱",
+      "description": "Светлые поверхности, зелёно-голубые акценты, мягкие природные оттенки.",
+      "mode": "light",
+      "effect": "petals",
+      "palette": ["#f2f7f3", "#ffffff", "#2e7d5b", "#3f8fb0", "#b89a4e"]
+    }
+  ]
+}
